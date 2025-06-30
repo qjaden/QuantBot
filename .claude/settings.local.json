@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python test:*)",
+      "Bash(python:*)",
+      "Bash(PYTHONPATH=/home/ouo/workspace/quantbot python -c \"from quantbot.core.data import BarData, DataBuffer; print('Import successful')\")",
+      "Bash(PYTHONPATH=/home/ouo/workspace/quantbot python test/buffer_test.py)",
+      "Bash(PYTHONPATH=/home/ouo/workspace/quantbot python example.py)",
+      "Bash(conda activate:*)",
+      "Bash(pip install:*)",
+      "Bash(PYTHONPATH=/home/ouo/workspace/quantbot python test/factor_test.py)",
+      "Bash(PYTHONPATH=/home/ouo/workspace/quantbot python test/complex_factor_test.py)",
+      "Bash(PYTHONPATH=/home/ouo/workspace/quantbot python test/new_factor_test.py)",
+      "Bash(PYTHONPATH=. python test/complex_factor_test.py)",
+      "Bash(PYTHONPATH=. python test/new_factor_test.py)",
+      "Bash(PYTHONPATH=/home/ouo/workspace/quantbot python test/test_quantbot_engine.py)",
+      "Bash(PYTHONPATH=/home/ouo/workspace/quantbot python test/test_technical_indicators.py)",
+      "Bash(PYTHONPATH=/home/ouo/workspace/quantbot python test/test_integration.py)",
+      "Bash(PYTHONPATH=/home/ouo/workspace/quantbot python -m unittest discover test/ -v)",
+      "Bash(rg:*)",
+      "Bash(PYTHONPATH=/home/ouo/workspace/quantbot python -c \"\nimport unittest\nfrom test.test_technical_indicators import TestTechnicalIndicators\nsuite = unittest.TestSuite()\nsuite.addTest(TestTechnicalIndicators('test_sma_calculation'))\nrunner = unittest.TextTestRunner()\nrunner.run(suite)\n\")",
+      "Bash(rm:*)",
+      "Bash(mv:*)",
+      "mcp__ide__getDiagnostics",
+      "Bash(grep:*)"
+    ],
+    "deny": []
+  }
+}
