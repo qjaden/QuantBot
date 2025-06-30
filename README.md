@@ -1,4 +1,4 @@
-# QuantBot - 高性能量化回测框架
+# QuantBot - 高性能量化因子计算库
 
 <div align="center">
 
